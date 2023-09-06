@@ -1,0 +1,55 @@
+
+
+
+/* if the viewport is equal to 600 or less */
+@media (max-width:600px){
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand
+    .site-main .about-area .about-title h2>span{
+    padding: 1rem;
+    margin: 0%;        
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 41px;
+}
+
+body{
+    padding: 10px;
+}
+
+nav ul{
+    flex-direction: column;
+}
+
+
+}
+
+
+
+@media (max-width:768px){
+    .site-main .about-area .about-title h2>span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+    
+}
+
+
+
+@media(max-width: 1024px) {
+    .header-area
+    .site-main .about-area .about-title h2>span{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    }
+
+    section{
+        margin: 10px;
+    }
+    footer{
+        padding: 5px 0;
+    }
+}
+

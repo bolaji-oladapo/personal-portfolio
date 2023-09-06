@@ -1,0 +1,250 @@
+/* import fonts from fonts.css file */
+@import url(/assets/css/fonts.css);
+
+/* css variable */
+@import url(/assets/css/partials/variables.css);
+
+/* import global styling */
+@import url(/assets/css/partials/_global.css);
+
+/* reset some default styles */
+
+*{
+	margin: 0;
+	padding: 0;
+	
+	font-family: var(--roboto);
+}
+
+body, h1, h2, h3, h4, h5, p{
+	margin: 0;
+	padding: 0;
+}
+
+header, nav, main, footer{
+	max-width: 100%;
+	padding: 20px;
+	
+}
+
+section{
+	margin: 20px;
+	padding: 20px;
+	/* border: 1px solid #ccc; */
+	border-radius: 5px;
+}
+
+footer{
+	text-align: center;
+	padding: 10px 0;
+}
+/* start navigation */
+
+.header_area{
+	background-color: rgb(245, 245, 245);
+	padding: 0px 20px;
+}
+
+.header_area .main-menu .navbar .navbar-brand{
+	padding: 1 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+	padding: 1rem 6rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+	font: normal 500 15px/2px var(--roboto);
+	text-transform: uppercase;
+	padding: 1.7rem;
+	color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+	background: var(--gradient-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+	background: var(--gradient-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+
+
+
+/* end of navigation */
+
+/* home area */
+
+.site-main .site-banner .site-title h3{
+	padding-top: 35%;
+	font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+	content: "";
+	height: 2px;
+	width: 18vw;
+	background: black;
+	display: inline-block;
+	margin-left: 5%;
+	transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+	font-size: 3rem;
+}
+
+.site-main .site-banner .site-title h4{
+	font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+	padding: 7rem 0;
+	width: 90rem;
+}
+
+
+
+/* end home are */
+
+/* START about area */
+
+/* for about img */
+.site-main .about-area{
+	padding: 8rem 5rem;	
+}
+
+/*for about writings  */
+.site-main .about-area .about-title h2 > span{
+	display: block;
+	font: normal bold 49px/60px var(--roboto);
+	letter-spacing: 20px;
+}
+
+.site-main .about-area .about-title > p{
+	padding: .4rem 0;
+}
+.site-main .about-area p{
+	font-style: italic;
+}
+
+
+
+/* END about area */
+
+/* portfolio start */
+.site-main .project-area .project-title>h1{
+	padding: .4rem o;
+}
+
+.site-main .project-area .card-container{
+	background-size: cover;
+	background-position: top;
+	padding-top: 150px;
+	padding-bottom: 100px;
+	column-gap: 0px;
+	padding: 20px 200px 20px;
+}
+
+.site-main .project-area .card-container .card-body{
+	display: flex;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	border: 2px;
+	box-sizing: border-box;
+}
+
+.font-roboto{
+	font-family: var(--roboto);
+}
+
+/* end portfolio */
+
+/* contact start */
+
+.contact-form
+.contact-info{
+	width: 50%;
+	padding: 0 15px;
+}
+
+.contact-form .input-group{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.contact-form .input-control::placeholder{
+	color: black;
+	opacity: 0.8;
+	font-weight: 300;
+}
+
+.contact-form .input-control{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	border: none;
+	font-family: var(--roboto);
+	font-weight: 400;
+	font-size: 16px;
+	background-color: wheat;
+	padding: 0 20px;
+	color: black;
+	border: 1px solid transparent;
+	transition: border-color 0.3s ease;
+}
+.contact-form .input-control:focus{
+	border-color: aquamarine;
+}
+.contact-form  textarea.input-control{
+	height: 120px;
+	resize: none;
+	padding-top: 15px;
+}
+
+.contact-info-item{
+	margin: 0 0 30px;
+	padding: 0 0 0 20px;
+}
+.contact-info-item h3{
+	font-size: 20px;
+	text-transform: capitalize;
+	margin-top: 30px;
+}
+
+/* contact end */
+
+
+/* start footer area */
+
+footer.footer-area{
+	padding: 5rem 0;
+	background: url(/assets/img/v915-techi-007-l.jpg) no-repeat;
+}
+
+footer.footer-area .social h5{
+	font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a>i{
+	font-size: 22px;
+	padding: 2rem;
+	color: var(--border-color);
+}
+
+footer.footer-area .social a:hover>i{
+	color: var(--primary-color2);
+}
+
+/* end footer area */
+
+/* skills section start */
+.site-main .skill span{
+	color: white;
+}

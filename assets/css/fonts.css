@@ -1,0 +1,7 @@
+/* @font-face */
+
+@font-face {
+    font-family: 'roboto' 'satisfy';
+    src: url(/fonts/Roboto/Roboto-Regular.ttf) ;
+    src: url(/fonts/Satisfy/Satisfy-Regular.ttf);
+}
